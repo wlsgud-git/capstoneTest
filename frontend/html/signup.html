@@ -14,19 +14,28 @@
       <!-- 회원가입 폼 -->
       <div class="signup_form_box">
         <form action="post" class="signup_form">
-          <input type="text" placeholder="학번" name="student_id" />
-          <input type="text" placeholder="이름" name="name" />
+          <!-- 학번 -->
+          <input
+            id="signup_student_id"
+            type="text"
+            placeholder="학번"
+            name="student_id"
+          />
+          <!-- 이름 -->
+          <input id="signup_name" type="text" placeholder="이름" name="name" />
+          <!-- 비밀번호 -->
           <input
             id="signup_password"
             type="password"
             placeholder="비밀번호"
             name="password"
           />
+          <!-- 비밀번호 확인 -->
           <input
-            id="signup_password"
+            id="signup_password_check"
             type="password"
-            placeholder="비밀번호"
-            name="password"
+            placeholder="비밀번호 확인"
+            name="password_check"
           />
           <button class="signup_btn">회원가입</button>
         </form>
@@ -36,5 +45,5 @@
     </div>
   </body>
 
-  <script src="../javascript/index.js"></script>
+  <script src="../javascript/singup.js"></script>
 </html>
