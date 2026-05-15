@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-import { config } from "../config/env.config";
+import { config } from "../config/env.config.js";
 
 // 토큰 생성
 export const createJwt = async (payload, type) => {

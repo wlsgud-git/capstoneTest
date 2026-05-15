@@ -13,26 +13,31 @@
       <h2 class="signup_text">회원가입</h2>
       <!-- 회원가입 폼 -->
       <div class="signup_form_box">
-        <form action="post" class="signup_form">
+        <form action="#" class="signup_form">
           <!-- 학번 -->
           <input
-            id="signup_student_id"
+            class="signup_student_id"
             type="text"
             placeholder="학번"
             name="student_id"
           />
           <!-- 이름 -->
-          <input id="signup_name" type="text" placeholder="이름" name="name" />
+          <input
+            class="signup_name"
+            type="text"
+            placeholder="이름"
+            name="name"
+          />
           <!-- 비밀번호 -->
           <input
-            id="signup_password"
+            class="signup_password"
             type="password"
             placeholder="비밀번호"
             name="password"
           />
           <!-- 비밀번호 확인 -->
           <input
-            id="signup_password_check"
+            class="signup_password_check"
             type="password"
             placeholder="비밀번호 확인"
             name="password_check"
@@ -41,9 +46,9 @@
         </form>
       </div>
       <!-- 회원가입 바로가기 -->
-      <a href="login.html">로그인</a>
+      <a href="/login">로그인</a>
     </div>
-  </body>
 
-  <script src="../javascript/singup.js"></script>
+    <script type="module" src="../javascript/signup.js"></script>
+  </body>
 </html>

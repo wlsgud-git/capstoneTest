@@ -9,3 +9,8 @@ export const pool = mysql.createPool({
   waitForConnections: true,
   connectionLimit: 10,
 });
+
+// pool.connect((err) => {
+//   if (err) console.log("연결 실패함");
+//   else console.log("연결 성공");
+// });
