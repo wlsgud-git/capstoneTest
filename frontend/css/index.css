@@ -1,0 +1,92 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100%;
+  border: 1px solid green;
+  display: none;
+  flex-direction: column;
+}
+
+.question_container {
+  width: 100%;
+  height: 100%;
+}
+
+.conversation_box {
+  width: 100%;
+  height: calc(100% - var(--question-box-height));
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  overflow-y: auto;
+}
+
+.question_container_box {
+  width: 100%;
+  /* width: calc(100% - var(--sidebar-width)); */
+  height: var(--question-box-height);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
+  padding: 26px 8px;
+}
+
+.question_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  /* padding: 0px 9px; */
+}
+
+.question_form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question_input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px 16px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.question_btn {
+  width: 40px;
+  height: 40px;
+  margin: 0px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat_div {
+  display: flex;
+}
+
+.chat_balloon {
+  max-width: 250px;
+  overflow-wrap: break-word;
+  padding: 5px;
+  margin: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}

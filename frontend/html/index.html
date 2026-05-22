@@ -3,9 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <title>홈페이지</title>
   </head>
   <body>
-    <a href="/login">로그인 이동</a>
+    <div class="container">
+      <div class="sidebar"></div>
+      <div class="question_container">
+        <!-- 대화내용 박스 -->
+        <div class="conversation_box"></div>
+        <!-- 질문 인풋박스 -->
+        <div class="question_container_box">
+          <div class="question_box">
+            <form action="#" class="question_form">
+              <input type="text" name="question" class="question_input" />
+              <button class="question_btn">ㅁ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../javascript/index.js"></script>
   </body>
 </html>
