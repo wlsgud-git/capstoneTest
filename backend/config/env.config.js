@@ -23,7 +23,7 @@ export let config = {
   },
 
   ai: {
-    api_key: required("OPENAI_API_KEY"),
+    api_key: required("GOOGLE_AI_API_KEY"),
   },
 
   //   secure: {

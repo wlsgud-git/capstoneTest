@@ -23,8 +23,10 @@ app.use(express.static(path.join(__dirname, "../frontend")));
 
 // 라우터 설정
 import AuthRouter from "./routes/auth.router.js";
+import QuestionRouter from "./routes/question.router.js";
 
 app.use("/auth", AuthRouter);
+app.use("/q", QuestionRouter);
 
 // 홈페이지
 app.get("/", (req, res) => {

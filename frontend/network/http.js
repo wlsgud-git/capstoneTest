@@ -9,7 +9,6 @@ export const fetching = async (url, option) => {
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
-        // Accept: "application/json",
         ...headers,
       },
     });
